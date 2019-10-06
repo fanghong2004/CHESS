@@ -1,0 +1,49 @@
+=======================================================================================================================
+Note:: Users should specify the following information for running R-RHESSys
+=======================================================================================================================
+1. The spatial extent of the study region or input grid data
+maxr:: 146
+maxc:: 177
+xllcorner:: 799600.00012
+yllcorner:: 2647174.38755
+cellsize:: 200
+nodata_value:: -9999.0
+=======================================================================================================================
+2. Specifying the simulation year, month and day
+Note::Actually, the program will determine the endingdate for each month because it varies between normal and leap year
+Clim_First_Year:: 1960
+Clim_Last_Year::  2013
+Clim_First_Month:: 1
+Clim_Last_Month:: 12
+Clim_First_Day:: 1
+Clim_Last_Day:: 31
+Clim_First_Hour:: 1
+Clim_Last_Hour::  24
+=======================================================================================================================
+3. Specifying the period for outputting simulation results
+Sim_First_Year:: 1960
+Sim_Last_Year::  2013
+Sim_First_Month:: 1
+Sim_Last_Month:: 12
+Sim_First_Day:: 1
+Sim_Last_Day:: 31
+Sim_First_Hour:: 1
+Sim_Last_Hour::  24
+=======================================================================================================================
+4. Specifying the number of years to spin-up model simulations
+Note:: The spin interval must less than the length of your input climate data
+Spin_years:: 3
+Sping_inteval:: 2
+Spin_flag:: 1
+=======================================================================================================================
+5. Specifying the paths for input and output files
+input_filename_prefix:: xf_ws
+input_default_file_directory:: C:/GuopingData/newprograms/wuyuzheng/xf_ws/defs/
+input_image_file_directory:: C:/GuopingData/newprograms/wuyuzheng/xf_ws/flowtable/
+input_flowtable_directory:: C:/GuopingData/newprograms/wuyuzheng/xf_ws/flowtable/
+input_climate_directory:: C:/GuopingData/newprograms/wuyuzheng/xf_ws/climate/
+output_file_directory:: C:/GuopingData/newprograms/wuyuzheng/xf_ws/out/
+Flowtablename:: xf_ws_flow_table.dat
+=======================================================================================================================
+ 
+For question and problems, please contact Dr. Guoping Tang by tangg2010@gmail.com
